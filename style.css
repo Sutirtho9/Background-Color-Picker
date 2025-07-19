@@ -1,0 +1,110 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #181c24;
+    color: #f3f3f3;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    color: #7fffd4;
+    text-shadow: 0 2px 16px #0e1117;
+}
+
+button {
+    padding: 0.8em 2.2em;
+    margin: 0 1em 1.5em 1em;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #7fffd4 0%, #1e90ff 100%);
+    color: #181c24;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(30, 144, 255, 0.08);
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+button:hover, button:focus {
+    background: linear-gradient(90deg, #1e90ff 0%, #7fffd4 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.display-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1em;
+    justify-content: center;
+    background: #232837;
+}
+
+#hex {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    color: #7fffd4;
+    background: #232837;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    margin-top: 1.5em;
+    box-shadow: 0 2px 8px rgba(30, 144, 255, 0.08);
+    letter-spacing: 2px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.clip-btn{
+    background: none;
+    color: #181c24;
+    padding: 0.5em 1.5em;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(30, 144, 255, 0.08);
+    transition: background 0.2s, transform 0.15s;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+    button {
+        font-size: 1rem;
+        padding: 0.7em 1.2em;
+    }
+    #hex {
+        font-size: 1.1rem;
+        padding: 0.5em 0.7em;
+    }
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%   ;
+}
+.dev-name {
+    color: rgb(255, 132, 0);
+    font-weight: bold;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
